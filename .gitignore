@@ -1,0 +1,13 @@
+# 1. Ignore absolutely everything in the repository
+*
+
+# 2. Un-ignore directories (required so Git can traverse folders)
+!*/
+
+# 3. Un-ignore any file that contains a dot (has an extension)
+!*.*
+
+# 4. Explicitly un-ignore specific extensionless configuration files you might need
+!Makefile
+!Dockerfile
+!LICENSE

@@ -57,6 +57,9 @@ Your solution must be compiled (or packaged) into an executable format. The judg
 * **Java:** `java -jar solution.jar /data/measurements.txt /output/results.txt`
 * **Node.js:** `node solution.js /data/measurements.txt /output/results.txt`
 
+> [!NOTE] 
+> In the root of the repository which you will submit, there should not be any other file starting with "solution" except the file which is the solution.
+
 Your program **must not** print the results to standard output (`stdout`). It must write the final text to the file path specified in the second argument.
 
 ---

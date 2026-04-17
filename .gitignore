@@ -6,6 +6,7 @@
 
 # 3. Un-ignore any file that contains a dot (has an extension)
 !*.*
+*.txt
 
 # 4. Explicitly un-ignore specific extensionless configuration files you might need
 !Makefile

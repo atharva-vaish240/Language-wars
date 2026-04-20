@@ -1,6 +1,3 @@
-# 1. Ignore absolutely everything in the repository
-*
-
 # 2. Un-ignore directories (required so Git can traverse folders)
 !*/
 

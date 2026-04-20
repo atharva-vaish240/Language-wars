@@ -1,20 +1,22 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <vector>
 using namespace std;
 
-// map<string, set<pair<int, float>>>
-
 // Split the string using the delimeter
-void adv_tokenizer(string s, char del)
+vector<string> adv_tokenizer(string s, char del)
 {
     stringstream ss(s);
     string word;
+    vector<string> v;
     while (!ss.eof()) {
         getline(ss, word, del);
-        cout << word << endl;
+        // cout << word << endl;
+        v.push_back(word);
     }
-    cout<<"\n";
+    
+    return v;
 }
 
 int main() {
@@ -29,7 +31,11 @@ int main() {
     while (getline (MyReadFile, myText) && i<10) {
         // Output the text from the file
         cout << myText << "\n";
-        adv_tokenizer(myText, ';');
+        vector<string> v = adv_tokenizer(myText, ';');
+        for(string it: v){
+            cout << it << endl;
+        }
+        cout<<"\n";
         i++; // rm this after prototyping
     }
 
